@@ -75,4 +75,164 @@ body {
 /* ---------- CARD GRID ---------- */
 
 .grid {
-  d
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+  text-align: center;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* ---------- VIDEO ---------- */
+
+.video {
+  margin: 40px 0;
+}
+
+/* ---------- ALT SECTION ---------- */
+
+.alt {
+  background: #d9dedb;
+}
+
+/* ---------- CONTACT ---------- */
+
+.contact {
+  text-align: center;
+  font-size: 18px;
+}
+
+footer {
+  background: #cfc7bd;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  opacity: .8;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+  <h1>Stef K — Session Bassist</h1>
+  <p>BASS | BVs | SYNTH | MD</p>
+</section>
+
+<!-- INTRO -->
+
+<section class="section">
+  <div class="container split">
+
+    <div class="profile-box"></div>
+
+    <div class="intro">
+      <h2>Hello — I'm Stef</h2>
+      <p>
+        Professional session bass player available for recording and live work.
+        Reliable, groove-focused, and adaptable across genres.
+      </p>
+      <p>
+        Available for remote sessions, touring, and studio work.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="section alt">
+  <div class="container">
+    <h2 style="text-align:center;">What I Offer</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Studio Sessions</h3>
+        <p>Clean, tight, musical bass tracks delivered ready to mix.</p>
+      </div>
+
+      <div class="card">
+        <h3>Live Performance</h3>
+        <p>Professional live bass for tours, shows, and events.</p>
+      </div>
+
+      <div class="card">
+        <h3>Remote Recording</h3>
+        <p>High-quality remote bass tracking from your demos or charts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+
+<section class="section">
+  <div class="container">
+
+    <h2 style="text-align:center;">Performance Videos</h2>
+
+    <!-- Your Vimeo embed kept -->
+
+    <div class="video" style="padding:56.25% 0 0 0;position:relative;">
+      <iframe src="https://player.vimeo.com/video/240371140?badge=0&autopause=0&player_id=0&app_id=58479"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+      allowfullscreen></iframe>
+    </div>
+
+    <!-- Your YouTube embed kept -->
+
+    <div class="video">
+      <iframe width="100%" height="420"
+      src="https://www.youtube.com/embed/VIDEO_ID_2"
+      frameborder="0"
+      allowfullscreen></iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="section alt">
+  <div class="container contact">
+    <h2>Contact</h2>
+    <p>Email: <strong>s.a.w.k@live.co.uk</strong></p>
+  </div>
+</section>
+
+<footer>
+  © Stef K — Session Bass
+</footer>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+</body>
+</html>
